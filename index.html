@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <title>wordpress_finale</title>
-    </head>
-    <body>
 
-        <header>
-            <img src="img/logo.png" alt="logo" class="logo">
-            <nav> 
-                <ul class="clearfix">
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">EDITORIALS</a></li>
-                    <li><a href="#">ENVIROMENT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;900&display=swap"
+        rel="stylesheet">
+    <title>wordpress_finale</title>
+</head>
 
-        <main>
-            <section class="hero border_radius">
-                <div class="presentazione">
-                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit iure eos excepturi itaque tenetur iusto autem expedita!</p>
-                </div>    
-            </section>
+<body>
 
-            <section class="sezione2">
-                <div class="sezione_sottotitolo"> 
-                    <h1>Leadership</h1>
-                    <p>lorem ipsum dolor</p>
+    <header>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">EDITORIALS</a></li>
+                <li><a href="#">ENVIROMENT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero border_radius">
+            <div class="presentazione">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit iure eos excepturi itaque tenetur
+                    iusto autem expedita!</p>
+            </div>
+        </section>
+
+        <section class="sezione2">
+            <div class="sezione_sottotitolo">
+                <h1>Leadership</h1>
+                <p class="text_lightgrey">lorem ipsum dolor</p>
+            </div>
+
+            <!-- Florian dice che in un div in cui ci sono elementi floattanti ed elementi non floattanti è consigliato racchiudere gli elementi floattanti in un div interno da quelli non floattanti -->
+            <div class="row clearfix">
+                <!-- le classi "row" vengono utilizzate per le classi contententi elementi floattanti -->
+                <div class="colonna_laterali">
+                    <div class="immagine_sinistra banner border_radius"></div>
+                    <h5>Lorem</h5>
+                    <p class="text_lightgrey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                        quibusdam expedita corporis deleniti, eveniet animi tenetur odit </p>
                 </div>
 
-                <!-- Florian dice che in un div in cui ci sono elementi floattanti ed elementi non floattanti è consigliato racchiudere gli elementi floattanti in un div interno da quelli non floattanti -->
-                <div class="row clearfix"> <!-- le classi "row" vengono utilizzate per le classi contententi elementi floattanti -->
-                    <div class="colonna_laterali">
-                       <div class="immagine_sinistra banner border_radius"></div>
-                       <h5>Lorem</h5>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam expedita corporis deleniti, eveniet animi tenetur odit </p>
-                    </div>
-
-                    <div class="colonna_centrale">
-                        <div class="immagine_centrale banner border_radius"></div>
-                        <h5>Ipsum</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure rem deleniti reiciendis error. Laudantium sint aspernatur quibusdam nam itaque, rerum esse qui laborum asperiores quod, facilis dicta dolores. Illum, <assumenda class="lor">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, repellat, illo cumque deserunt voluptas iusto aspernatur quaerat voluptatem pariatur enim doloremque maxime velit eos incidunt aut. Impedit ratione officiis eveniet?</assumenda></p>
-                    </div>
-                    <div class="colonna_laterali">
-                        <div class="immagine_destra banner border_radius"></div>
-                        <h5>Dolor</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur commodi delectus nostrum nam esse cumque quod reiciendis, possimus, aut veniam alias magni distinctio</p>
-                    </div>
+                <div class="colonna_centrale">
+                    <div class="immagine_centrale banner border_radius"></div>
+                    <h5>Ipsum</h5>
+                    <p class="text_lightgrey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure rem
+                        deleniti reiciendis error. Laudantium sint aspernatur quibusdam nam itaque, rerum esse qui
+                        laborum asperiores quod, facilis dicta dolores. Illum, <assumenda class="lor">Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Natus, repellat, illo cumque deserunt voluptas iusto
+                            aspernatur quaerat voluptatem pariatur enim doloremque maxime velit eos incidunt aut.
+                            Impedit ratione officiis eveniet?</assumenda>
+                    </p>
                 </div>
-            </section>
-        </main>
+                <div class="colonna_laterali">
+                    <div class="immagine_destra banner border_radius"></div>
+                    <h5>Dolor</h5>
+                    <p class="text_lightgrey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur commodi
+                        delectus nostrum nam esse cumque quod reiciendis, possimus, aut veniam alias magni distinctio
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <footer>
-            <h4>Designed with &#128147;</h4>
-        </footer>
-    </body>
+    <footer>
+        <h4>Designed with &#128147;</h4>
+    </footer>
+</body>
+
 </html>
