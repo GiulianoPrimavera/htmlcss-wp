@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* selettore avanzato */
+header, footer, .hero, .sezione2{
+    margin: 10px auto;
+    width: 800px;
+
+}
+
+footer{
+    height: 30px;
+    background-color: rgb(80, 0, 150);
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    float: left;
+    color: rgb(128, 128, 128);
+    padding: 10px;
+}
+li a:hover{
+    background-color: rgb(211, 211, 211);
+}
+.hero{
+    background-color: rgb(200, 160, 115);
+    height: 300px;
+}
+
+/* sulla sezione centrale uso float:left per gli elementi interni e clearfix per il contenitore, per la classe row */
+.sezione2{
+    background-color: rgb(0, 0, 255);
+}
+.colonna_laterali{
+    background-color: rgb(135, 206, 250);
+    float: left;
+    height: 320px;
+    width: 20%;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row{
+    padding-bottom: 10px;
+}
+/* fine sezione centrale */
+
+.sezione_sottotitolo{
+    height: 50px;
+    background-color: rgb(135, 206, 250);
+    margin-bottom: 10px;
+}
+.colonna_centrale{
+    background-color: rgb(135, 206, 250);
+    float: left;
+    width: calc( 100% - 40% - 20px);
+    height: 320px;
+    margin: 0 10px;
+}
+
+.logo{
+    width: 140px;
+    padding: 5px;
+    border-right: 1px solid grey;
+}
